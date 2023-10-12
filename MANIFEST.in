@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include flutter_app *.css
+recursive-include flutter_app *.csv
+recursive-include flutter_app *.html
+recursive-include flutter_app *.ico
+recursive-include flutter_app *.js
+recursive-include flutter_app *.json
+recursive-include flutter_app *.md
+recursive-include flutter_app *.png
+recursive-include flutter_app *.py
+recursive-include flutter_app *.svg
+recursive-include flutter_app *.txt
+recursive-exclude flutter_app *.pyc
