@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{######}",
+ "creation": "2023-10-13 02:51:08.915518",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "product_name",
+  "product_image",
+  "product_category",
+  "product_price",
+  "product_description",
+  "product_unit",
+  "in_favorites",
+  "in_cart"
+ ],
+ "fields": [
+  {
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Product Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "product_image",
+   "fieldtype": "Attach Image",
+   "label": "Product Image",
+   "reqd": 1
+  },
+  {
+   "fieldname": "product_category",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Product Category",
+   "options": "Grocery Category",
+   "reqd": 1
+  },
+  {
+   "fieldname": "product_price",
+   "fieldtype": "Currency",
+   "label": "Product Price",
+   "reqd": 1
+  },
+  {
+   "fieldname": "product_description",
+   "fieldtype": "Text",
+   "label": "Product Description"
+  },
+  {
+   "fieldname": "product_unit",
+   "fieldtype": "Link",
+   "label": "Product Unit",
+   "options": "Unit"
+  },
+  {
+   "default": "0",
+   "fieldname": "in_favorites",
+   "fieldtype": "Check",
+   "label": "In Favorites"
+  },
+  {
+   "default": "0",
+   "fieldname": "in_cart",
+   "fieldtype": "Check",
+   "label": "In Cart"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-27 03:51:33.669820",
+ "modified_by": "Administrator",
+ "module": "grocery delivery app",
+ "name": "Grocery Product",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

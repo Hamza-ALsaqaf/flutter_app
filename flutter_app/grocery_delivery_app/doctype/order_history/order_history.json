@@ -1,0 +1,57 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-10-24 06:51:39.859842",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "placed_order",
+  "order_date",
+  "time_placed",
+  "order_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "placed_order",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Placed Order",
+   "options": "Placed Order",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "placed_order.order_date",
+   "fieldname": "order_date",
+   "fieldtype": "Date",
+   "label": "Order Date",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "placed_order.order_status",
+   "fieldname": "order_status",
+   "fieldtype": "Select",
+   "label": "Order Status",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "placed_order.time_placed",
+   "fieldname": "time_placed",
+   "fieldtype": "Time",
+   "label": "Time placed",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-10-24 07:03:25.077418",
+ "modified_by": "Administrator",
+ "module": "grocery delivery app",
+ "name": "Order History",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
